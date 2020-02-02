@@ -1,0 +1,1 @@
+start /b "" "python\python.exe" "general3.py"
