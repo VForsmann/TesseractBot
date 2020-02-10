@@ -1,1 +1,1 @@
-start /b "" "python\python.exe" "general3.py"
+start /b "" "python\python.exe" "walk_straight.py"
