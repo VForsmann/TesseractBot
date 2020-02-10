@@ -1,3 +1,9 @@
+# Version 0.0.2
+10.02.2020
+
+- Add multiple Window Support
+- Calm down bot for less active farming: more effective atm.
+
 # Version 0.0.1
 02.02.2020
 
