@@ -129,7 +129,7 @@ try:
                         keyboard.press_and_release("c")
 
                         # general wait time for next analysis of image
-                        time.sleep(10)
+                        time.sleep(6)
                     
             except KeyboardInterrupt:
                 exit()
