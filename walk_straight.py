@@ -98,7 +98,10 @@ try:
                     if(keyboard.is_pressed("q")):
                         break
                     robot = Robot()
-                    windowimg = robot.take_screenshot(bounding_box)
+                    try:
+                        windowimg = robot.take_screenshot(bounding_box)
+                    except Exception as e:
+                        continue
                     #conert to type L, means just black and white
                     windowimg = windowimg.convert('L')
                     #convert image to numpy array to work with pixels
