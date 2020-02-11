@@ -13,6 +13,7 @@ import re
 import keyboard
 from random import *
 import threading
+from pyrobot import Robot
 
 
 pytesseract.pytesseract.tesseract_cmd = r'.\TesserAct\tesseract.exe'
@@ -25,6 +26,8 @@ windows = []
 windowRects = []
 #mss to get images
 sct = mss()
+
+
 try:
     while True:
         print("WINDOW SELECTION, CLICK YOUR WINDOW IN NEXT 5 SECS, THEN JUST WAIT")
@@ -74,6 +77,7 @@ try:
     #multiple window support
     print(range(len(windows)))
     threads = []
+
     for index in range(len(windows)):
         def bot():
             # get window and rect
@@ -93,7 +97,8 @@ try:
                 while True:
                     if(keyboard.is_pressed("q")):
                         break
-                    windowimg = ImageGrab.grab(bbox= bounding_box)
+                    robot = Robot()
+                    windowimg = robot.take_screenshot(bounding_box)
                     #conert to type L, means just black and white
                     windowimg = windowimg.convert('L')
                     #convert image to numpy array to work with pixels
@@ -104,7 +109,7 @@ try:
 
                     d = pytesseract.image_to_data(img, output_type='data.frame')
 
-                    #cv2.imshow('screen', img)
+                    cv2.imshow('screen', img)
                     if (cv2.waitKey(1) & 0xFF) == ord('q'):
                         cv2.destroyAllWindows()
                         break
