@@ -8,8 +8,8 @@ With GIT you can get updates fast :)
 
 
 # Folder
-- python (Installed Python 3.8.1)
-- TesserAct (Installed Google Tesseract)
+- python (Installed Python 3.8.1) https://www.python.org/downloads/release/python-381/
+- TesserAct (Installed Google Tesseract) https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.0.0-alpha.20191030.exe
 
 # Scripts
 - Run setup.cmd for install packages

@@ -127,9 +127,10 @@ try:
                         click(monsterx,  monstery)
                         #spellcast
                         keyboard.press_and_release("c")
+                        keyboard.press_and_release("s")
 
                         # general wait time for next analysis of image
-                        time.sleep(6)
+                        time.sleep(2)
                     
             except KeyboardInterrupt:
                 exit()
