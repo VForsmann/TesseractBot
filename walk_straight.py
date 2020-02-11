@@ -104,7 +104,7 @@ try:
 
                     d = pytesseract.image_to_data(img, output_type='data.frame')
 
-                    cv2.imshow('screen', img)
+                    #cv2.imshow('screen', img)
                     if (cv2.waitKey(1) & 0xFF) == ord('q'):
                         cv2.destroyAllWindows()
                         break

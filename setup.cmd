@@ -1,1 +1,1 @@
-start /b "" "python\python.exe" -m pip install --upgrade pip numpy opencv-python mss Image pywin32 pipenv pytesseract Pillow pandas keyboard thread
+start /b "" "python\python.exe" -m pip install --upgrade pip numpy opencv-python mss Image pywin32 pipenv pytesseract Pillow pandas keyboard
